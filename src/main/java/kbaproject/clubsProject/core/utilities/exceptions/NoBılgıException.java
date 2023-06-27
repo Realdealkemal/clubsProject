@@ -23,7 +23,7 @@ public class NoBılgıException {
     @ResponseStatus(code = HttpStatus.BAD_REQUEST) //eğer hata yakalanırsa badrequest döndür
     public ProblemDetails handleValidxception(MethodArgumentNotValidException methodArgumentNotValidException){ //eğer hatan BusinessException olursa döndür
         ProblemDetails problemDetails=new ProblemDetails();
-        problemDetails.setMessage("Validation Problems");
+        problemDetails.setMessage("Valisdation Problems");
 
         return problemDetails;
     }
